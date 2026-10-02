@@ -1,0 +1,49 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Ana Souza",
+      "email": "ana@email.com",
+      "senha": "1234",
+      "interesses": []
+    },
+    {
+      "id": 2,
+      "nome": "Carlos Lima",
+      "email": "carlos@email.com",
+      "senha": "abcd",
+      "interesses": []
+    },
+    {
+      "id": 3,
+      "nome": "Ana Silva",
+      "email": "ana.silva@email.com",
+      "senha": "senha123"
+    },
+    {
+      "id": 4,
+      "nome": "Bruno Souza",
+      "email": "bruno.souza@email.com",
+      "senha": "senha456"
+    },
+    {
+      "id": 5,
+      "nome": "Carla Dias",
+      "email": "carla.dias@email.com",
+      "senha": "senha789"
+    },
+    {
+      "id": 6,
+      "nome": "Daniel Lima",
+      "email": "daniel.lima@email.com",
+      "senha": "abc123"
+    },
+    {
+      "id": 7,
+      "nome": "Elena Costa",
+      "email": "elena.costa@email.com",
+      "senha": "xyz789"
+    }
+  ],
+  "proximoIdUsuario": 8
+}

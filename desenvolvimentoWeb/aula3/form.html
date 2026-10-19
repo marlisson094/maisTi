@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Meu primeiro formulário</h1>
+    <form action="index.html" target="_blank">	
+        Login:<input name="login" type="text" value="user"><br>
+        Senha:<input name="password" type="password" value="123">
+        
+        <br>
+        <p><b>Função</b></p>
+        <input type="radio" name="funcao" value="aluno">Aluno
+        <input type="radio" name="funcao" value="professor">Professor
+        
+        <br>
+        <p><b>Time</b></p>
+        <input type="checkbox" name="time" value="ita">Itabaiana
+        <input type="checkbox" name="time" value="lag">Lagarto
+        <input type="checkbox" name="time" value="outro">Outro
+        
+        <br>
+        <p><b>Estado:</b></p> 
+        <select name="estado" size="1" multiple> 
+            <option value="rs"> RS </option>
+            <option value="sc"> SC </option>
+            <option value="pr"> PR </option>
+            <option value="sp"> SP </option>
+            <option value="se" selected>SE</option>
+	    </select>
+
+        <br><br>
+        <textarea rows="25" cols="50" name="mensagem">Busquem conhecimento!</textarea> 
+        <br>
+
+        <br>
+        <br>
+        <input type="button" value="Não Clique!" id="">
+
+        <br>
+        <input type="button" value="Alerta" onclick="alert('Não era para clicar')" id="">
+
+        <br>
+        <br>
+        <input type="submit" value="Enviar"> <input type="reset" value="Resetar">
+        
+
+    </form>
+
+    <hr><br><br>
+
+    <form> 
+Nome:<input name="login" type="text" required><br>
+E-mail: <input type="email" name="email" required> <br>
+Cor favorita: <input type="color" name="corFavorita" required> <br>
+Aniversário: <input type="date" name="aniversario" min="1926-10-19" max="2026-10-19" required> <br>
+Foto de perfil: <input type="file" name="foto" required> <br>
+Filhos: <input type="number" name="filhos" min="0" max="10" step="1" value="0" required> <br>
+Horário para contato: <input type="time" name="horario" > <br>
+Página pessoal: <input type="url" name="sitePessoal"><br>
+<input type="submit">
+</form>
+
+
+    <hr><br><br>
+
+<form method="get" action="teste.html" target="_blank"> 
+	<fieldset>
+		<legend> Entrar no site </legend>
+	Login:<input name="login" type="text"><br>
+		Senha:<input name="senha" type="password"><br>
+	<input type="submit">
+</fieldset>
+</form>
+
+    <hr><br><br>
+
+    Estado: <select name="estado"> 
+		<option value="rs"> RS </option>
+		<option value="sc"> SC </option>
+		<option value="pr"> PR </option>
+		<option value="sp"> SP </option>
+	</select>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Toy DOM</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Brincando com DOM</h1>
+
+    <div id="buttons">
+        <button id="btn-principal">Cor aleatória na célula principal</button>
+        <button id="btn-alternar">Alternar vermelho/preto nas alternáveis</button>
+        <button id="btn-cage">Cage-ificar certas imagens</button>
+    </div>
+
+    <div id="grid">
+        <!-- primeira linha -->
+        <div id="principal" class="cell">
+            <img src="https://img.icons8.com/ios/50/000000/home.png" alt="ícone">
+        </div>
+        <div class="cell alternavel">
+            <img src="https://img.icons8.com/ios/50/000000/settings.png" alt="ícone">
+        </div>
+        <div class="cell alternavel hierarquia">
+            <span><img src="https://img.icons8.com/ios/50/000000/info.png" alt="ícone"></span>
+        </div>
+        <!-- segunda linha -->
+        <div class="cell">
+            <img src="https://img.icons8.com/ios/50/000000/phone.png" alt="ícone">
+        </div>
+        <div class="cell alternavel">
+            <img src="https://img.icons8.com/ios/50/000000/calendar.png" alt="ícone">
+        </div>
+        <div class="cell">
+            <img src="https://img.icons8.com/ios/50/000000/mail.png" alt="ícone">
+        </div>
+        <!-- terceira linha -->
+        <div class="cell hierarquia">
+            <div><img src="https://img.icons8.com/ios/50/000000/music.png" alt="ícone"></div>
+        </div>
+        <div class="cell alternavel">
+            <img src="https://img.icons8.com/ios/50/000000/camera.png" alt="ícone">
+        </div>
+        <div class="cell">
+            <img src="https://img.icons8.com/ios/50/000000/star.png" alt="ícone">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

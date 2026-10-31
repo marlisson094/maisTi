@@ -14,7 +14,7 @@
     <script>
         // A função alert() é pré-definida e cria uma caixa de diálogo simples.
         // Ela vai aparecer antes de você ver qualquer conteúdo na página.
-        alert("Script do <head> executado! A página ainda não foi carregada.");
+        //alert("Script do <head> executado! A página ainda não foi carregada.");
     </script>
 
 </head>
@@ -24,6 +24,8 @@
     <p>Clique no botão abaixo para interagir com a página.</p>
 
     <button onclick="iniciarInteracao()">Clique Aqui</button>
+
+    <button id="botaoOla">Dizer Olá </button>
 
     <script type="text/javascript">
         // NOTA: O atributo 'type="text/javascript"' era obrigatório antigamente,
@@ -36,19 +38,22 @@
         // A função é um bloco de código que pode ser chamado/executado quando quisermos.
         // Esta função será chamada quando o botão for clicado (pelo 'onclick').
         function iniciarInteracao() {
-            
+            const elementoTitulo = document.getElementById("tituloPrincipal");
+
             // --- USO DE UMA FUNÇÃO PRÉ-DEFINIDA: prompt() ---
             // A função prompt() abre uma caixa de diálogo para solicitar uma entrada do usuário.
             const nomeUsuario = prompt("Por favor, digite o seu nome:");
 
             // --- MANIPULAÇÃO DO DOM (Document Object Model) ---
             // Usamos document.getElementById() para encontrar um elemento na página pelo seu 'id'.
-            const elementoTitulo = document.getElementById("tituloPrincipal");
 
             // Verificamos se o usuário digitou um nome.
             if (nomeUsuario) {
                 // Modificamos o conteúdo do elemento <h1> para incluir o nome do usuário.
-                elementoTitulo.textContent = "Olá, " + nomeUsuario + "!";
+                // elementoTitulo.textContent = "Olá, " + nomeUsuario + "!";
+                
+                //ex1
+                elementoTitulo.textContent = `Olá ${nomeUsuario}!`
 
                 // --- USO DE UMA FUNÇÃO PRÉ-DEFINIDA: alert() ---
                 // Usamos alert() para dar um feedback ao usuário.
@@ -56,8 +61,22 @@
             } else {
                 alert("Você não digitou um nome, então o título não foi alterado.");
             }
-            // --- FIM DA FUNÇÃO ---
         }
+        
+        //ex2
+        console.log(navigator.appName)
+        console.log(new Date())
+        console.log("Hello World!")
+
+        //ex3
+        function mostrarBoasVindas() {console.log("Bem-Vindo!");}
+        window.addEventListener("load", (event) => {mostrarBoasVindas();});
+
+        //ex4 
+        function alertBemVindo(){alert("Olá")}
+        const botaoOla = document.getElementById("botaoOla")
+        botaoOla.addEventListener("click",alertBemVindo)
+
     </script>
 
 </body>

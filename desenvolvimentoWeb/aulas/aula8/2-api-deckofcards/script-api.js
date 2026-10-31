@@ -43,23 +43,16 @@ const comprarCarta = async () => {
 
     // Usando async/await, uma sintaxe mais moderna para lidar com Promises.
     try {
-        const resposta = await fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`);
+        const resposta = await fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=1`);
         const dados = await resposta.json();
-        const id="btnComprar" 
+        
         console.log("Carta comprada:", dados);
 
         // Pega a primeira carta do array de 'cards' retornado pela API
         const carta = dados.cards[0];
 
-        //pegar 2° carta 
-        const carta2 = dados.cards[1]
-
         // Manipula o DOM para exibir a imagem da carta na tela
-        areaDaCarta.innerHTML = `
-        <img src="${carta.image}" alt="${carta.value} of ${carta.suit}">
-        <hr>
-        <img src="${carta2.image}" alt="${carta2.value} of ${carta2.suit}>
-        `;
+        areaDaCarta.innerHTML = `<img src="${carta.image}" alt="${carta.value} of ${carta.suit}">`;
 
     } catch (erro) {
         console.error("Erro ao comprar a carta:", erro);

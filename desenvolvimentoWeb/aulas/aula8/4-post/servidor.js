@@ -15,13 +15,16 @@ const servidor = http.createServer((req, res) => {
         // 1. Recebe os dados do formulário em pedaços (chunks)
         req.on('data', (chunk) => {
             corpoRequisicao += chunk.toString();
+            console.log(chunk.toString());
+            
         });
 
         // 2. Quando todos os dados chegarem
         req.on('end', () => {
             // 3. Analisa (parse) os dados do formulário
             const dados = querystring.parse(corpoRequisicao);
-
+            console.log(dados);
+            
             // 4. Valida as credenciais
             if (dados.email === USUARIO_VALIDO && dados.senha === SENHA_VALIDA) {
                 // SUCESSO: Redireciona para a página bemvindo.html

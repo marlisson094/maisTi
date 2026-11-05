@@ -10,10 +10,10 @@ async function buscarCEP(){
         para.textContent = `
             CEP:${dados.cep}, 
             UF: ${dados.uf}, 
-            Estado":${dados.estado}, 
+            Estado:${dados.estado}, 
             Localidade: ${dados.localidade},  
             Logradouro: ${dados.logradouro}, 
-            Bairro":${dados.bairro}
+            Bairro:${dados.bairro}
         `
         
     }catch(erro){

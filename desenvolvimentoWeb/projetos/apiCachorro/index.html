@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dogo-argentino.png" type="image/x-icon">
+    <title>DogApi</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            background-color: #F5EBDD;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container {
+            background-color: #D6B995;
+            border: 1px solid #C3A47F;
+            border-radius: 12px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #btnGerar {
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: none;
+            background-color: #8B5E3C;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        #btnGerar:hover {
+            background-color: #6B4226;
+        }
+
+        #eleImg {
+            width: 500px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .escondido {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <img id="eleImg" class="escondido" src="" alt="Foto de cachorro">
+            <button id="btnGerar">Gerar Img</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
